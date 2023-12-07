@@ -1,0 +1,153 @@
+:root {
+  font-size: 62.5%;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.estrutura-geral {
+    margin: 0 auto;
+    width: 102.4em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #162028;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: 'Viaoda Libre', sans-serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: white;
+    margin-left: 10%;
+}
+
+.nav {
+    display: flex;
+    gap: 6rem;
+    margin-right: 5%;
+}
+
+.nav a {
+    color: #425564;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color .6s ease;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.conteudo-modelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6.2rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.conteudo-modelos-article {
+    width: 80%;
+    text-align: center;
+}
+
+.conteudo-modelos-article p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.conteudo-modelos-article h1 {
+    font-family: 'Viaoda Libre', sans-serif;
+    font-size: 3.6rem;
+    font-weight: normal;
+    color: #252525;
+}
+
+.modelos-row {
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modelos-row li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modelos-row li h2 {
+    margin: 1.2em;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+}
+
+.modelos-row li p {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #003d52;
+    padding: var(--large-default-padding);
+    color: white;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    justify-content: center;
+}
+
+.detalhes h1 {
+    text-align: start;
+    margin: 15% 10% 0 10%;
+    font-size: 4.8rem;
+    font-family: 'Viaoda Libre', sans-serif;
+    font-weight: normal;
+}
+
+.detalhes p {
+    text-align: start;
+    margin: 4% 35% 12% 10%;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b171f;
+    color: #6f8597;
+    font-size: 1.6rem;
+    padding: 20px;
+    text-align: center;
+}
